@@ -1,0 +1,60 @@
+﻿@page "/editgame"
+
+<PageTitle>New game</PageTitle>
+
+<h3>New Game</h3>
+
+@if (genres is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm Model="@game" FormName="editGame">
+            <div class="mb-3">
+                <label for="name">Name:</label>
+                <InputText class="form-control" @bind-Value="game.Name" id="name" />
+            </div>
+            <div class="mb-3">
+                <label for="genre">Genre:</label>
+                <InputSelect class="form-select" @bind-Value="game.GenreId" id="genre">
+                <option value="">Select a genre</option>
+                @foreach (var genre in genres)
+                {
+                    <option value="@genre.Id">@genre.Name</option>
+                }
+                </InputSelect>
+            </div>
+            <div class="mb-3">
+                <label for="price">Price:</label>
+                <InputNumber class="form-control" @bind-Value="game.Price" id="price" />
+            </div>
+            <div class="mb-3">
+                <label for="releaseDate">Release Date:</label>
+                <InputDate class="form-control" @bind-Value="game.ReleaseDate" id="releaseDate" />
+            </div>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+private GameDetails game {get; set;} = new()
+    {
+        Name = string.Empty,
+        ReleaseDate = DateOnly.FromDateTime(DateTime.UtcNow)
+    };
+
+    private GenresClient genresClient = new();
+
+    private Genre[]? genres;
+
+    protected override void OnInitialized()
+    {
+        genres = genresClient.GetGenres();
+    }
+}
+    
+   
