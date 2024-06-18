@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj": {}
+    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj",
         "projectName": "Gamestore.Frontend",
-        "projectPath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\Gamestore.Frontend.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Projects\\Learning.NET\\GameStore\\Gamestore.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
