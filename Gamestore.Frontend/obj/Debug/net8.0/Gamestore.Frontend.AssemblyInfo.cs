@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gamestore.Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8b66942ad3fd436194916843d8db23e3a80296a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30758c7de392caa797199aa31aabe7907ac60c3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gamestore.Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gamestore.Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
