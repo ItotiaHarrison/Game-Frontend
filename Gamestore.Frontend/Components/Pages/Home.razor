@@ -31,14 +31,18 @@ else
                     <td class="text-end">@game.Price.ToString("C2")</td>
                     <td>@game.ReleaseDate</td>
                     <td>
-                        <div class="">
+                        <div class="d-flex">
                             <a href="@GameUrl(game.Id)" class="btn btn-primary me-2" role="button">
                                 <i class="bi bi-pencil"></i>
                             </a>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="@GetDeleteModalId(game)">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
                         </div>
+                        <DeleteGame Game="@game" />
                     </td>
-                    </tr>
-                    }
+                </tr>
+                }
         </tbody>
     </table>
 }
@@ -53,4 +57,9 @@ else
     }
 
     private static string GameUrl(int id) => $"/editgame/{id}";
+
+    private string GetDeleteModalId(GameSummary game)
+    {
+        return $"#{DeleteGame.GetModalId(game)}";
+    }
 }
